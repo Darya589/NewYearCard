@@ -1,0 +1,74 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #00274d;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card {
+    background: linear-gradient(135deg, #004aad, #00d4ff);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 500px;
+}
+.greeting {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.snowflake {
+    font-size: 50px;
+    animation: fall 3s infinite;
+}
+@keyframes fall {
+    0% { transform: translateY(-50px); }
+    100% { transform: translateY(50px); }
+}
+.garland {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.light {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    animation: blink 2s infinite;
+}
+.light.red {
+    background-color: red;
+    animation-delay: 0s;
+}
+.light.green {
+    background-color: green;
+    animation-delay: 0.4s;
+}
+.light.blue {
+    background-color: blue;
+    animation-delay: 0.8s;
+}
+.light.yellow {
+    background-color: yellow;
+    animation-delay: 1.2s;
+}
+.light.purple {
+    background-color: purple;
+    animation-delay: 1.6s;
+}
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+.sent-message {
+    font-weight: bold;
+    font-size: 28px;
+    margin-top: 10px;
+}
